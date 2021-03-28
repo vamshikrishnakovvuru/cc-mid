@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Profile
+        </title>
+        
+        <style>
+        
+    .btn {  
+            float: right;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 10px;
+            margin-top: 1px;
+            margin-right: 2px;
+            border: none;
+            text-decoration:none;
+         
+            font-size: 15px; 
+            
+            }
+
+            .btns {  
+            align-items: center;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 10px;
+            margin-top: 1px;
+            margin-right: 2px;
+            border: none;
+            text-decoration:none;
+         
+            font-size: 15px; 
+            
+            }
+
+.vertical-center {
+  margin: 0;
+  position: top;
+  align-content: center;
+  text-align: center;
+}
+        
+#details {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#details td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#details tr:nth-child(even){background-color: #f2f2f2;}
+
+#details tr:hover {background-color: #ddd;}
+
+</style>
+        
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    </head>
+
+
+<body>
+
+    <nav class="navtop">
+    
+    <div>
+     <p><a class="btn" href="{{ url_for('logout')}}">logout</a></p> 
+     
+        <br>
+        <br>
+    </div>
+ 
+    <div class="vertical-center">
+      
+            <a class="btns" href="{{ url_for('dashboard')}}">Dashboard</a>
+            <a class="btns" href="{{ url_for('Search')}}"> SearchData </a>
+            <a class="btns" href="{{ url_for('upload')}}"> Upload Data</a>
+            <br>
+            <br>
+        
+    </div>
+
+    </nav>
+    <div class='tableauPlaceholder' id='viz1616915294501' style='position: relative'><noscript><a href='#'><img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;cc&#47;ccmidtermworkbook&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='ccmidtermworkbook&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;cc&#47;ccmidtermworkbook&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1616915294501');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1366px';vizElement.style.height='795px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1366px';vizElement.style.height='795px';} else { vizElement.style.width='100%';vizElement.style.height='1227px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+</body>
+</html>
