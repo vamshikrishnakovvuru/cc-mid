@@ -22,7 +22,7 @@ config = {
   'user':'skywalkers@cc-skywalkers',
   'password':'cloudcloud@1234',
   'database':'ccmiddb',
-  'ssl_ca': 'C:\\ssl\\BaltimoreCyberTrustRoot.crt.pem',
+  'ssl_ca': 'ssl\BaltimoreCyberTrustRoot.crt.pem',
 }
 
 
